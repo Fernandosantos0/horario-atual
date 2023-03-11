@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horário Atual</title>
+        <!-- seo -->
+        <meta name="description" content="Mostrando o horário atual">
+        <meta name="keywords" content="relógio, html, js">
+        <meta name="author" content="Fernando Santos">
+        <link rel="author" href="#">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.6.4.min.js"></script>
+        <!-- javascript -->
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <h1>Gerenciando tempo</h1>
+            </div>
+        </header> <!-- container -->
+
+        <main id="conteundo-center">
+            <div class="container-time">
+                <div id="container-tempo">
+                    <div class="container-cronometro">
+                        <time id="visorCronometro">00:00:00</time>
+                        <div>
+                            <button type="button" id="btnIniciar">Iniciar</button>
+                            <button type="button" id="btnParar">Parar</button>
+                            <button type="button" id="btnZerar">Zerar</button>
+                        </div>
+                    </div> <!-- container-cronometro -->
+                </div>
+
+                <div id="container-relogio">
+                    <time id="campoRelogio">00:00:00</time>
+                    <time id="campoData">Semana, dia de mês de ano</time>
+                </div>
+            </div>
+        </main> <!-- conteundo-center -->
+
+        
+    </body>
+</html>

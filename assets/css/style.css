@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'DS-DIGIB';
+    src: url('../fonts/DS-DIGIB.TTF') format('truetype');
+}
+
+:root {
+    --cor-primaria: hsl(0, 0%, 100%);
+    --cor-secundaria: hsl(120, 100%, 25%);
+    --cor-terciara: hsl(0, 0%, 0%);
+    --cor-quartenario: hsl(0, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url('../img/bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+header#header {
+    text-align: center;
+    color: var(--cor-primaria);
+    text-shadow: 2px 3px 6px var(--cor-terciara);
+    padding: 15px;
+}
+
+#conteundo-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: var(--cor-primaria);
+}
+
+.container-cronometro #visorCronometro {
+    display: block;
+    font-size: 31px;
+    font-family: 'DS-DIGIB', Helvetica;
+}
+
+.container-cronometro > div {
+    margin: 10px 0;
+}
+
+.container-cronometro > div > button[type="button"] {
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 5px 10px;
+    background-color: var(--cor-terciara);
+    color: var(--cor-primaria);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.container-cronometro > div > button[type="button"]:focus {
+    outline: none;
+}
+
+.container-cronometro > div > button[type="button"]:hover {
+    background-color: rgb(26, 24, 24);
+}
+
+#container-relogio time {
+    display: block;
+}
+
+#container-relogio time:first-child{
+    margin-bottom: 5px;
+}
+
+.container-time {
+    padding: 25px;
+}
+
+.padrao {
+    color: var(--cor-primaria);
+}
+
+.iniciar {
+    color: var(--cor-secundaria);
+}
+
+.parar {
+    color: var(--cor-quartenario);
+}
+
+@media (max-width: 552px){
+
+    .container-cronometro #visorCronometro {
+        font-size: 35px;
+    }
+    
+    .container-cronometro > div > button[type="button"] {
+        display: block;
+        margin-inline: auto;
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .container-cronometro > div > button[type="button"]:nth-of-type(2) {
+        margin-block: 8px;
+    }
+
+}
