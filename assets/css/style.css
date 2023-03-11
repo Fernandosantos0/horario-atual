@@ -115,7 +115,7 @@ header#header {
     color: var(--cor-quartenario);
 }
 
-#rodape p {
+#rodape {
     position: absolute;
     top: 62%;
     left: 50%;
@@ -124,10 +124,14 @@ header#header {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    color: var(--cor-primaria);
+    text-align: center;
+}
+
+#rodape p {
     font-style: italic;
     text-shadow: 1px 1px 2px var(--cor-terciara);
     font-size: 21px;
+    color: var(--cor-primaria);
 }
 
 #rodape p a {
@@ -137,6 +141,12 @@ header#header {
 
 #rodape p a:hover {
     color: rgb(83, 180, 83);
+}
+
+@media (max-width: 691px) {
+    #rodape {
+        top: 64%;
+    }
 }
 
 @media (max-width: 552px){
@@ -154,6 +164,10 @@ header#header {
 
     .container-cronometro > div > button[type="button"]:nth-of-type(2) {
         margin-block: 8px;
+    }
+
+    #rodape {
+        top: 73%;
     }
 
 }
